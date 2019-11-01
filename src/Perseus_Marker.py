@@ -222,9 +222,6 @@ def deformface():
         global PRE_name_Nose_ctrl_Z
         
         pm.move((float(dataarray[0]) - float(PRE_name_Nose_ctrl_X)) * strengthX, (float(dataarray[1]) - float(PRE_name_Nose_ctrl_Y)) * strengthY, (float(dataarray[2]) - float(PRE_name_Nose_ctrl_Z)) * strengthZ, 'name_Nose_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_Nose_ctrl', v=float(dataarray[0]) - PRE_name_Nose_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_Nose_ctrl', v=float(dataarray[1]) - PRE_name_Nose_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_Nose_ctrl', v=float(dataarray[2]) - PRE_name_Nose_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_Nose_ctrl_X = dataarray[0]
         PRE_name_Nose_ctrl_Y = dataarray[1]
@@ -237,9 +234,6 @@ def deformface():
         global PRE_name_downLip_ctrl_Z
         
         pm.move((float(dataarray[3]) - float(PRE_name_downLip_ctrl_X)) * strengthX, (float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY, (float(dataarray[5]) - float(PRE_name_downLip_ctrl_Z)) * strengthZ, 'name_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_downLip_ctrl', v=float(dataarray[3]) - PRE_name_downLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_downLip_ctrl', v=float(dataarray[4]) - PRE_name_downLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_downLip_ctrl', v=float(dataarray[5]) - PRE_name_downLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_downLip_ctrl_X = dataarray[3]
         PRE_name_downLip_ctrl_Y = dataarray[4]
@@ -252,9 +246,6 @@ def deformface():
         global PRE_name_l_downLip_ctrl_Z
         
         pm.move((float(dataarray[6]) - float(PRE_name_l_downLip_ctrl_X)) * strengthX, (float(dataarray[7]) - float(PRE_name_l_downLip_ctrl_Y)) * strengthY, (float(dataarray[8]) - float(PRE_name_l_downLip_ctrl_Z)) * strengthZ, 'name_l_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_downLip_ctrl', v=float(dataarray[6]) - PRE_name_l_downLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_downLip_ctrl', v=float(dataarray[7]) - PRE_name_l_downLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_downLip_ctrl', v=float(dataarray[8]) - PRE_name_l_downLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_downLip_ctrl_X = dataarray[6]
         PRE_name_l_downLip_ctrl_Y = dataarray[7]
@@ -267,9 +258,6 @@ def deformface():
         global PRE_name_r_downLip_ctrl_Z
         
         pm.move((float(dataarray[9]) - float(PRE_name_r_downLip_ctrl_X)) * strengthX, (float(dataarray[10]) - float(PRE_name_r_downLip_ctrl_Y)) * strengthY, (float(dataarray[11]) - float(PRE_name_r_downLip_ctrl_Z)) * strengthZ, 'name_r_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_downLip_ctrl', v=float(dataarray[9]) - PRE_name_r_downLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_downLip_ctrl', v=float(dataarray[10]) - PRE_name_r_downLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_downLip_ctrl', v=float(dataarray[11]) - PRE_name_r_downLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_downLip_ctrl_X = dataarray[9]
         PRE_name_r_downLip_ctrl_Y = dataarray[10]
@@ -282,9 +270,6 @@ def deformface():
         global PRE_name_l_up_cheek_ctrl_Z
         
         pm.move((float(dataarray[12]) - float(PRE_name_l_up_cheek_ctrl_X)) * strengthX, (float(dataarray[13]) - float(PRE_name_l_up_cheek_ctrl_Y)) * strengthY, (float(dataarray[14]) - float(PRE_name_l_up_cheek_ctrl_Z)) * strengthZ, 'name_l_up_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_up_cheek_ctrl', v=float(dataarray[12]) - PRE_name_l_up_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_up_cheek_ctrl', v=float(dataarray[13]) - PRE_name_l_up_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_up_cheek_ctrl', v=float(dataarray[14]) - PRE_name_l_up_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_up_cheek_ctrl_X = dataarray[12]
         PRE_name_l_up_cheek_ctrl_Y = dataarray[13]
@@ -297,9 +282,6 @@ def deformface():
         global PRE_name_l_cheek_ctrl_Z
         
         pm.move((float(dataarray[15]) - float(PRE_name_l_cheek_ctrl_X)) * strengthX, (float(dataarray[16]) - float(PRE_name_l_cheek_ctrl_Y)) * strengthY, (float(dataarray[17]) - float(PRE_name_l_cheek_ctrl_Z)) * strengthZ, 'name_l_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_cheek_ctrl', v=float(dataarray[15]) - PRE_name_l_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_cheek_ctrl', v=float(dataarray[16]) - PRE_name_l_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_cheek_ctrl', v=float(dataarray[17]) - PRE_name_l_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
         
         PRE_name_l_cheek_ctrl_X = dataarray[15]
         PRE_name_l_cheek_ctrl_Y = dataarray[16]
@@ -312,9 +294,6 @@ def deformface():
         global PRE_name_l_Nose_ctrl_Z
         
         pm.move((float(dataarray[18]) - float(PRE_name_l_Nose_ctrl_X)) * strengthX, (float(dataarray[19]) - float(PRE_name_l_Nose_ctrl_Y)) * strengthY, (float(dataarray[20]) - float(PRE_name_l_Nose_ctrl_Z)) * strengthZ, 'name_l_Nose_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_Nose_ctrl', v=float(dataarray[18]) - PRE_name_l_Nose_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_Nose_ctrl', v=float(dataarray[19]) - PRE_name_l_Nose_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_Nose_ctrl', v=float(dataarray[20]) - PRE_name_l_Nose_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_Nose_ctrl_X = dataarray[18]
         PRE_name_l_Nose_ctrl_Y = dataarray[19]
@@ -327,9 +306,6 @@ def deformface():
         global PRE_name_l_upCornerLip_ctrl_Z
         
         pm.move((float(dataarray[21]) - float(PRE_name_l_upCornerLip_ctrl_X)) * strengthX, (float(dataarray[22]) - float(PRE_name_l_upCornerLip_ctrl_Y)) * strengthY, (float(dataarray[23]) - float(PRE_name_l_upCornerLip_ctrl_Z)) * strengthZ, 'name_l_upCornerLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_upCornerLip_ctrl', v=float(dataarray[21]) - PRE_name_l_upCornerLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_upCornerLip_ctrl', v=float(dataarray[22]) - PRE_name_l_upCornerLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_upCornerLip_ctrl', v=float(dataarray[23]) - PRE_name_l_upCornerLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_upCornerLip_ctrl_X = dataarray[21]
         PRE_name_l_upCornerLip_ctrl_Y = dataarray[22]
@@ -342,9 +318,6 @@ def deformface():
         global PRE_name_l_jaw_cheek_ctrl_Z
 
         pm.move((float(dataarray[24]) - float(PRE_name_l_jaw_cheek_ctrl_X)) * strengthX, (float(dataarray[25]) - float(PRE_name_l_jaw_cheek_ctrl_Y)) * strengthY, (float(dataarray[26]) - float(PRE_name_l_jaw_cheek_ctrl_Z)) * strengthZ, 'name_l_jaw_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_jaw_cheek_ctrl', v=float(dataarray[24]) - PRE_name_l_jaw_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_jaw_cheek_ctrl', v=float(dataarray[25]) - PRE_name_l_jaw_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_jaw_cheek_ctrl', v=float(dataarray[26]) - PRE_name_l_jaw_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_jaw_cheek_ctrl_X = dataarray[24]
         PRE_name_l_jaw_cheek_ctrl_Y = dataarray[25]
@@ -357,9 +330,6 @@ def deformface():
         global PRE_name_l_nose_cheek_ctrl_Z
         
         pm.move((float(dataarray[27]) - float(PRE_name_l_nose_cheek_ctrl_X)) * strengthX, (float(dataarray[28]) - float(PRE_name_l_nose_cheek_ctrl_Y)) * strengthY, (float(dataarray[29]) - float(PRE_name_l_nose_cheek_ctrl_Z)) * strengthZ, 'name_l_nose_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_nose_cheek_ctrl', v=float(dataarray[27]) - PRE_name_l_nose_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_nose_cheek_ctrl', v=float(dataarray[28]) - PRE_name_l_nose_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_nose_cheek_ctrl', v=float(dataarray[29]) - PRE_name_l_nose_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_nose_cheek_ctrl_X = dataarray[27]
         PRE_name_l_nose_cheek_ctrl_Y = dataarray[28]
@@ -372,9 +342,6 @@ def deformface():
         global PRE_name_r_up_cheek_ctrl_Z
         
         pm.move((float(dataarray[30]) - float(PRE_name_r_up_cheek_ctrl_X)) * strengthX, (float(dataarray[31]) - float(PRE_name_r_up_cheek_ctrl_Y)) * strengthY, (float(dataarray[32]) - float(PRE_name_r_up_cheek_ctrl_Z)) * strengthZ, 'name_r_up_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_up_cheek_ctrl', v=float(dataarray[30]) - PRE_name_r_up_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_up_cheek_ctrl', v=float(dataarray[31]) - PRE_name_r_up_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_up_cheek_ctrl', v=float(dataarray[32]) - PRE_name_r_up_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_up_cheek_ctrl_X = dataarray[30]
         PRE_name_r_up_cheek_ctrl_Y = dataarray[31]
@@ -387,9 +354,6 @@ def deformface():
         global PRE_name_r_cheek_ctrl_Z
         
         pm.move((float(dataarray[33]) - float(PRE_name_r_cheek_ctrl_X)) * strengthX, (float(dataarray[34]) - float(PRE_name_r_cheek_ctrl_Y)) * strengthY, (float(dataarray[35]) - float(PRE_name_r_cheek_ctrl_Z)) * strengthZ, 'name_r_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_cheek_ctrl', v=float(dataarray[33]) - PRE_name_r_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_cheek_ctrl', v=float(dataarray[34]) - PRE_name_r_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_cheek_ctrl', v=float(dataarray[35]) - PRE_name_r_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_cheek_ctrl_X = dataarray[33]
         PRE_name_r_cheek_ctrl_Y = dataarray[34]
@@ -402,9 +366,6 @@ def deformface():
         global PRE_name_r_Nose_ctrl_Z
         
         pm.move((float(dataarray[36]) - float(PRE_name_r_Nose_ctrl_X)) * strengthX, (float(dataarray[37]) - float(PRE_name_r_Nose_ctrl_Y)) * strengthY, (float(dataarray[38]) - float(PRE_name_r_Nose_ctrl_Z)) * strengthZ, 'name_r_Nose_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_Nose_ctrl', v=float(dataarray[36]) - PRE_name_r_Nose_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_Nose_ctrl', v=float(dataarray[37]) - PRE_name_r_Nose_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_Nose_ctrl', v=float(dataarray[38]) - PRE_name_r_Nose_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_Nose_ctrl_X = dataarray[36]
         PRE_name_r_Nose_ctrl_Y = dataarray[37]
@@ -417,9 +378,6 @@ def deformface():
         global PRE_name_r_Lip_ctrl_Z
         
         pm.move((float(dataarray[39]) - float(PRE_name_r_Lip_ctrl_X)) * strengthX, (float(dataarray[40]) - float(PRE_name_r_Lip_ctrl_Y)) * strengthY, (float(dataarray[41]) - float(PRE_name_r_Lip_ctrl_Z)) * strengthZ, 'name_r_Lip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_Lip_ctrl', v=float(dataarray[39]) - PRE_name_r_Lip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_Lip_ctrl', v=float(dataarray[40]) - PRE_name_r_Lip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_Lip_ctrl', v=float(dataarray[41]) - PRE_name_r_Lip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_Lip_ctrl_X = dataarray[39]
         PRE_name_r_Lip_ctrl_Y = dataarray[40]
@@ -432,9 +390,6 @@ def deformface():
         global PRE_name_r_jaw_cheek_ctrl_Z
         
         pm.move((float(dataarray[42]) - float(PRE_name_r_jaw_cheek_ctrl_X)) * strengthX, (float(dataarray[43]) - float(PRE_name_r_jaw_cheek_ctrl_Y)) * strengthY, (float(dataarray[44]) - float(PRE_name_r_jaw_cheek_ctrl_Z)) * strengthZ, 'name_r_jaw_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_jaw_cheek_ctrl', v=float(dataarray[42]) - PRE_name_r_jaw_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_jaw_cheek_ctrl', v=float(dataarray[43]) - PRE_name_r_jaw_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_jaw_cheek_ctrl', v=float(dataarray[44]) - PRE_name_r_jaw_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_jaw_cheek_ctrl_X = dataarray[42]
         PRE_name_r_jaw_cheek_ctrl_Y = dataarray[43]
@@ -447,9 +402,6 @@ def deformface():
         global PRE_name_r_nose_cheek_ctrl_Z
         
         pm.move((float(dataarray[45]) - float(PRE_name_r_nose_cheek_ctrl_X)) * strengthX, (float(dataarray[46]) - float(PRE_name_r_nose_cheek_ctrl_Y)) * strengthY, (float(dataarray[47]) - float(PRE_name_r_nose_cheek_ctrl_Z)) * strengthZ, 'name_r_nose_cheek_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_nose_cheek_ctrl', v=float(dataarray[45]) - PRE_name_r_nose_cheek_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_nose_cheek_ctrl', v=float(dataarray[46]) - PRE_name_r_nose_cheek_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_nose_cheek_ctrl', v=float(dataarray[47]) - PRE_name_r_nose_cheek_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_nose_cheek_ctrl_X = dataarray[45]
         PRE_name_r_nose_cheek_ctrl_Y = dataarray[46]
@@ -462,9 +414,6 @@ def deformface():
         global PRE_name_l_down_eye_border_ctrl_Z
         
         pm.move((float(dataarray[48]) - float(PRE_name_l_down_eye_border_ctrl_X)) * strengthX, (float(dataarray[49]) - float(PRE_name_l_down_eye_border_ctrl_Y)) * strengthY, (float(dataarray[50]) - float(PRE_name_l_down_eye_border_ctrl_Z)) * strengthZ, 'name_l_down_eye_border_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_down_eye_border_ctrl', v=float(dataarray[48]) - PRE_name_l_down_eye_border_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_down_eye_border_ctrl', v=float(dataarray[49]) - PRE_name_l_down_eye_border_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_down_eye_border_ctrl', v=float(dataarray[50]) - PRE_name_l_down_eye_border_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_down_eye_border_ctrl_X = dataarray[48]
         PRE_name_l_down_eye_border_ctrl_Y = dataarray[49]
@@ -477,9 +426,6 @@ def deformface():
         global PRE_name_r_down_eye_border_ctrl_Z
         
         pm.move((float(dataarray[51]) - float(PRE_name_r_down_eye_border_ctrl_X)) * strengthX, (float(dataarray[52]) - float(PRE_name_r_down_eye_border_ctrl_Y)) * strengthY, (float(dataarray[53]) - float(PRE_name_r_down_eye_border_ctrl_Z)) * strengthZ, 'name_r_down_eye_border_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_down_eye_border_ctrl', v=float(dataarray[51]) - PRE_name_r_down_eye_border_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_down_eye_border_ctrl', v=float(dataarray[52]) - PRE_name_r_down_eye_border_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_down_eye_border_ctrl', v=float(dataarray[53]) - PRE_name_r_down_eye_border_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_down_eye_border_ctrl_X = dataarray[51]
         PRE_name_r_down_eye_border_ctrl_Y = dataarray[52]
@@ -492,9 +438,6 @@ def deformface():
         global PRE_name_upLip_ctrl_Z
         
         pm.move((float(dataarray[54]) - float(PRE_name_upLip_ctrl_X)) * strengthX, (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, (float(dataarray[56]) - float(PRE_name_upLip_ctrl_Z)) * strengthZ, 'name_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_upLip_ctrl', v=float(dataarray[54]) - PRE_name_upLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_upLip_ctrl', v=float(dataarray[55]) - PRE_name_upLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_upLip_ctrl', v=float(dataarray[56]) - PRE_name_upLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_upLip_ctrl_X = dataarray[54]
         PRE_name_upLip_ctrl_Y = dataarray[55]
@@ -507,9 +450,6 @@ def deformface():
         global PRE_name_l_upLip_ctrl_Z
         
         pm.move((float(dataarray[57]) - float(PRE_name_l_upLip_ctrl_X)) * strengthX, (float(dataarray[58]) - float(PRE_name_l_upLip_ctrl_Y)) * strengthY, (float(dataarray[59]) - float(PRE_name_l_upLip_ctrl_Z)) * strengthZ, 'name_l_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_l_upLip_ctrl', v=float(dataarray[57]) - PRE_name_l_upLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_l_upLip_ctrl', v=float(dataarray[58]) - PRE_name_l_upLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_l_upLip_ctrl', v=float(dataarray[59]) - PRE_name_l_upLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_l_upLip_ctrl_X = dataarray[57]
         PRE_name_l_upLip_ctrl_Y = dataarray[58]
@@ -522,9 +462,6 @@ def deformface():
         global PRE_name_r_upLip_ctrl_Z
         
         pm.move((float(dataarray[60]) - float(PRE_name_r_upLip_ctrl_X)) * strengthX, (float(dataarray[61]) - float(PRE_name_r_upLip_ctrl_Y)) * strengthY, (float(dataarray[62]) - float(PRE_name_r_upLip_ctrl_Z)) * strengthZ, 'name_r_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
-        pm.setKeyframe('name_r_upLip_ctrl', v=float(dataarray[60]) - PRE_name_r_upLip_ctrl_X, attribute='TranslateX', t=[numcurrenttime])
-        pm.setKeyframe('name_r_upLip_ctrl', v=float(dataarray[61]) - PRE_name_r_upLip_ctrl_Y, attribute='TranslateY', t=[numcurrenttime])
-        pm.setKeyframe('name_r_upLip_ctrl', v=float(dataarray[62]) - PRE_name_r_upLip_ctrl_Z, attribute='TranslateZ', t=[numcurrenttime])
 
         PRE_name_r_upLip_ctrl_X = dataarray[60]
         PRE_name_r_upLip_ctrl_Y = dataarray[61]
