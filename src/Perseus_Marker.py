@@ -202,8 +202,8 @@ def deformface():
     global strengthY
     #global strengthZ
     
-    strengthX = 50
-    strengthY = 30
+    strengthX = 75
+    strengthY = 45
     #strengthZ = 50
     
     all_rows = 1
@@ -222,16 +222,37 @@ def deformface():
         PRE_name_Nose_ctrl_X = dataarray[2]
         
         # name_downLip_ctrl (dataarray[3] ~ dataarray[5])
+        # name_down_teeth_ctrl (dataarray[3] ~ dataarray[5])
+        # name_jaw_ctrl (dataarray[3] ~ dataarray[5])
             
         global PRE_name_downLip_ctrl_X
         global PRE_name_downLip_ctrl_Y
         #global PRE_name_downLip_ctrl_Z
         
         pm.move(float((float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX) * (-1), float((float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY) * (-1), 'name_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        # 치아는 입술보단 덜 움직이므로 x 좌표 움직임에 0.8 곱함.
+        pm.move(float((float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX) * (-0.5), float((float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY) * (0.8), 'name_down_teeth_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        # 턱도 아랫입술과 같이 움직임
+        pm.move(float((float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX) * (-0.5), float((float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY) * (0.8), 'name_jaw_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_downLip_ctrl_Z = -float(dataarray[3])
         PRE_name_downLip_ctrl_Y = dataarray[4]
         PRE_name_downLip_ctrl_X = dataarray[5]
+
+        ############################################################################################
+        # name_down_teeth_ctrl (dataarray[3] ~ dataarray[5])
+            
+        #global PRE_name_downLip_ctrl_X
+        #global PRE_name_downLip_ctrl_Y
+        #global PRE_name_downLip_ctrl_Z
+        
+        # 치아는 입술보단 덜 움직이므로 x 좌표 움직임에 0.7 곱함.
+        #pm.move(float((float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX) * (-0.7), float((float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY) * (-1), 'name_down_teeth_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+
+        #PRE_name_downLip_ctrl_Z = -float(dataarray[3])
+        #PRE_name_downLip_ctrl_Y = dataarray[4]
+        #PRE_name_downLip_ctrl_X = dataarray[5]
+        ############################################################################################
         
         # name_l_downLip_ctrl (dataarray[6] ~ dataarray[8])
         
@@ -427,16 +448,35 @@ def deformface():
         PRE_name_r_down_eye_border_ctrl_X = dataarray[53]
         
         # name_upLip_ctrl (dataarray[54] ~ dataarray[56])
+        # name_up_teeth_ctrl (dataarray[54] ~ dataarray[56])
         
         global PRE_name_upLip_ctrl_X
         global PRE_name_upLip_ctrl_Y
         #global PRE_name_upLip_ctrl_Z
         
         pm.move(float((float(dataarray[56]) - float(PRE_name_upLip_ctrl_X)) * strengthX) * (-1), (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, 'name_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        
+        # 이빨은 입술보단 좌우로 덜 움직이니 x좌표 움직임에 0.5곱함.
+        pm.move(float((float(dataarray[56]) - float(PRE_name_upLip_ctrl_X)) * strengthX) * (-0.5), (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, 'name_up_teeth_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_upLip_ctrl_Z = -float(dataarray[54])
         PRE_name_upLip_ctrl_Y = dataarray[55]
         PRE_name_upLip_ctrl_X = dataarray[56]
+
+        ############################################################################################
+        # name_up_teeth_ctrl (dataarray[54] ~ dataarray[56])
+        
+        #global PRE_name_upLip_ctrl_X
+        #global PRE_name_upLip_ctrl_Y
+        #global PRE_name_upLip_ctrl_Z
+        
+        # 이빨은 입술보단 좌우로 덜 움직이니 x좌표 움직임에 0.5곱함.
+        #pm.move(float((float(dataarray[56]) - float(PRE_name_upLip_ctrl_X)) * strengthX) * (-0.5), (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, 'name_up_teeth_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+
+        #PRE_name_upLip_ctrl_Z = -float(dataarray[54])
+        #PRE_name_upLip_ctrl_Y = dataarray[55]
+        #PRE_name_upLip_ctrl_X = dataarray[56]
+        ############################################################################################
         
         # name_l_upLip_ctrl (dataarray[57] ~ dataarray[59])
         
