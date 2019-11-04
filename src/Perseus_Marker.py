@@ -200,10 +200,10 @@ def deformface():
     
     global strengthX
     global strengthY
-    global strengthZ
+    #global strengthZ
     
     strengthX = 50
-    strengthY = 50
+    strengthY = 30
     #strengthZ = 50
     
     all_rows = 1
@@ -227,7 +227,7 @@ def deformface():
         global PRE_name_downLip_ctrl_Y
         #global PRE_name_downLip_ctrl_Z
         
-        pm.move(-(float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX, (float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY, 'name_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move(float((float(dataarray[5]) - float(PRE_name_downLip_ctrl_X)) * strengthX) * (-1), float((float(dataarray[4]) - float(PRE_name_downLip_ctrl_Y)) * strengthY) * (-1), 'name_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_downLip_ctrl_Z = -float(dataarray[3])
         PRE_name_downLip_ctrl_Y = dataarray[4]
@@ -239,7 +239,7 @@ def deformface():
         global PRE_name_l_downLip_ctrl_Y
         #global PRE_name_l_downLip_ctrl_Z
         
-        pm.move((float(dataarray[8]) - float(PRE_name_l_downLip_ctrl_X)) * strengthX, (float(dataarray[7]) - float(PRE_name_l_downLip_ctrl_Y)) * strengthY, 'name_l_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move(float((float(dataarray[8]) - float(PRE_name_l_downLip_ctrl_X)) * strengthX) * (-1), float((float(dataarray[7]) - float(PRE_name_l_downLip_ctrl_Y)) * strengthY) * (-1), 'name_l_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
 
         #PRE_name_l_downLip_ctrl_Z = -float(dataarray[6])
@@ -252,7 +252,7 @@ def deformface():
         global PRE_name_r_downLip_ctrl_Y
         #global PRE_name_r_downLip_ctrl_Z
         
-        pm.move((float(dataarray[11]) - float(PRE_name_r_downLip_ctrl_X)) * strengthX, (float(dataarray[10]) - float(PRE_name_r_downLip_ctrl_Y)) * strengthY, 'name_r_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move((float(dataarray[11]) - float(PRE_name_r_downLip_ctrl_X)) * strengthX, float((float(dataarray[10]) - float(PRE_name_r_downLip_ctrl_Y)) * strengthY) * (-1), 'name_r_downLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_r_downLip_ctrl_Z = -float(dataarray[9])
         PRE_name_r_downLip_ctrl_Y = dataarray[10]
@@ -300,7 +300,7 @@ def deformface():
         global PRE_name_l_Lip_ctrl_Y
         #global PRE_name_l_Lip_ctrl_Z
         
-        pm.move((float(dataarray[23]) - float(PRE_name_l_Lip_ctrl_X)) * strengthX, (float(dataarray[22]) - float(PRE_name_l_Lip_ctrl_Y)) * strengthY, 'name_l_Lip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move(float((float(dataarray[23]) - float(PRE_name_l_Lip_ctrl_X)) * strengthX) * (-1), (float(dataarray[22]) - float(PRE_name_l_Lip_ctrl_Y)) * strengthY, 'name_l_Lip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_l_Lip_ctrl_Z = -float(dataarray[21])
         PRE_name_l_Lip_ctrl_Y = dataarray[22]
@@ -432,7 +432,7 @@ def deformface():
         global PRE_name_upLip_ctrl_Y
         #global PRE_name_upLip_ctrl_Z
         
-        pm.move((float(dataarray[56]) - float(PRE_name_upLip_ctrl_X)) * strengthX, (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, 'name_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move(float((float(dataarray[56]) - float(PRE_name_upLip_ctrl_X)) * strengthX) * (-1), (float(dataarray[55]) - float(PRE_name_upLip_ctrl_Y)) * strengthY, 'name_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_upLip_ctrl_Z = -float(dataarray[54])
         PRE_name_upLip_ctrl_Y = dataarray[55]
@@ -444,7 +444,7 @@ def deformface():
         global PRE_name_l_upLip_ctrl_Y
         #global PRE_name_l_upLip_ctrl_Z
         
-        pm.move((float(dataarray[59]) - float(PRE_name_l_upLip_ctrl_X)) * strengthX, (float(dataarray[58]) - float(PRE_name_l_upLip_ctrl_Y)) * strengthY, 'name_l_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move(float((float(dataarray[59]) - float(PRE_name_l_upLip_ctrl_X)) * strengthX) * (-1), (float(dataarray[58]) - float(PRE_name_l_upLip_ctrl_Y)) * strengthY, 'name_l_upLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
         #PRE_name_l_upLip_ctrl_Z = -float(dataarray[57])
         PRE_name_l_upLip_ctrl_Y = dataarray[58]
