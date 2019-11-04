@@ -119,9 +119,9 @@ PRE_name_l_Nose_ctrl_Y = 0.401333
 PRE_name_l_Nose_ctrl_X = 0.004767
 
 # 21 ~ 23
-PRE_name_l_upCornerLip_ctrl_Z = 0.13379
-PRE_name_l_upCornerLip_ctrl_Y = 0.377603
-PRE_name_l_upCornerLip_ctrl_X = -0.009102
+PRE_name_l_Lip_ctrl_Z = 0.13379
+PRE_name_l_Lip_ctrl_Y = 0.377603
+PRE_name_l_Lip_ctrl_X = -0.009102
 
 # 24 ~ 26
 PRE_name_l_jaw_cheek_ctrl_Z = 0.112907
@@ -294,17 +294,17 @@ def deformface():
         PRE_name_l_Nose_ctrl_Y = dataarray[19]
         PRE_name_l_Nose_ctrl_X = dataarray[20]
         
-        # name_l_upCornerLip_ctrl (dataarray[21] ~ dataarray[23])
+        # name_l_Lip_ctrl (dataarray[21] ~ dataarray[23])
         
-        global PRE_name_l_upCornerLip_ctrl_X
-        global PRE_name_l_upCornerLip_ctrl_Y
-        global PRE_name_l_upCornerLip_ctrl_Z
+        global PRE_name_l_Lip_ctrl_X
+        global PRE_name_l_Lip_ctrl_Y
+        global PRE_name_l_Lip_ctrl_Z
         
-        pm.move((float(dataarray[23]) - float(PRE_name_l_upCornerLip_ctrl_X)) * strengthX, (float(dataarray[22]) - float(PRE_name_l_upCornerLip_ctrl_Y)) * strengthY, (-float(dataarray[21]) - float(PRE_name_l_upCornerLip_ctrl_Z)) * strengthZ, 'name_l_upCornerLip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
+        pm.move((float(dataarray[23]) - float(PRE_name_l_Lip_ctrl_X)) * strengthX, (float(dataarray[22]) - float(PRE_name_l_Lip_ctrl_Y)) * strengthY, (-float(dataarray[21]) - float(PRE_name_l_Lip_ctrl_Z)) * strengthZ, 'name_l_Lip_ctrl', relative=True, objectSpace=True, worldSpaceDistance=True )
 
-        PRE_name_l_upCornerLip_ctrl_Z = -float(dataarray[21])
-        PRE_name_l_upCornerLip_ctrl_Y = dataarray[22]
-        PRE_name_l_upCornerLip_ctrl_X = dataarray[23]
+        PRE_name_l_Lip_ctrl_Z = -float(dataarray[21])
+        PRE_name_l_Lip_ctrl_Y = dataarray[22]
+        PRE_name_l_Lip_ctrl_X = dataarray[23]
         
         # name_l_jaw_cheek_ctrl (dataarray[24] ~ dataarray[26])
         
