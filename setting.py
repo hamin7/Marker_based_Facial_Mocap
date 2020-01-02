@@ -115,78 +115,78 @@ PRE_name_l_cheek_ctrl_X = -0.3695
 
 # 18 ~ 20
 #PRE_name_l_Nose_ctrl_Z = 0.145003
-PRE_name_l_Nose_ctrl_Y = 0.401333
-PRE_name_l_Nose_ctrl_X = 0.004767
+PRE_name_l_Nose_ctrl_Y = 0.267482
+PRE_name_l_Nose_ctrl_X = -0.36317
 
 # 21 ~ 23
 #PRE_name_l_Lip_ctrl_Z = 0.13379
-PRE_name_l_Lip_ctrl_Y = 0.377603
-PRE_name_l_Lip_ctrl_X = -0.009102
+PRE_name_l_Lip_ctrl_Y = 0.234867
+PRE_name_l_Lip_ctrl_X = -0.371
 
 # 24 ~ 26
 #PRE_name_l_jaw_cheek_ctrl_Z = 0.112907
-PRE_name_l_jaw_cheek_ctrl_Y = 0.400494
-PRE_name_l_jaw_cheek_ctrl_X = -0.050059
+PRE_name_l_jaw_cheek_ctrl_Y = 0.177909
+PRE_name_l_jaw_cheek_ctrl_X = -0.35571
 
 # 27 ~ 29
 #PRE_name_l_nose_cheek_ctrl_Z = 0.146252
-PRE_name_l_nose_cheek_ctrl_Y = 0.424185
-PRE_name_l_nose_cheek_ctrl_X = -0.000506
+PRE_name_l_nose_cheek_ctrl_Y = 0.186614
+PRE_name_l_nose_cheek_ctrl_X = -0.38361
 
 # 30 ~ 32
 #PRE_name_r_up_cheek_ctrl_Z = 0.13576
-PRE_name_r_up_cheek_ctrl_Y = 0.399635
-PRE_name_r_up_cheek_ctrl_X = 0.065753
+PRE_name_r_up_cheek_ctrl_Y = 0.185076
+PRE_name_r_up_cheek_ctrl_X = -0.35978
 
 # 33 ~ 35
 #PRE_name_r_cheek_ctrl_Z = 0.119672
-PRE_name_r_cheek_ctrl_Y = 0.387673
-PRE_name_r_cheek_ctrl_X = 0.077085
+PRE_name_r_cheek_ctrl_Y = 0.114699
+PRE_name_r_cheek_ctrl_X = -0.3695
 
 # 36 ~ 38
 #PRE_name_r_Nose_ctrl_Z = 0.143902
-PRE_name_r_Nose_ctrl_Y = 0.400701
-PRE_name_r_Nose_ctrl_X = 0.036468
+PRE_name_r_Nose_ctrl_Y = 0.267482
+PRE_name_r_Nose_ctrl_X = -0.36317
 
 # 39 ~ 41
 #PRE_name_r_Lip_ctrl_Z = 0.134883
-PRE_name_r_Lip_ctrl_Y = 0.377068
-PRE_name_r_Lip_ctrl_X = 0.047297
+PRE_name_r_Lip_ctrl_Y = 0.234867
+PRE_name_r_Lip_ctrl_X = -0.371
 
 # 42 ~ 44
 #PRE_name_r_jaw_cheek_ctrl_Z = 0.109223
-PRE_name_r_jaw_cheek_ctrl_Y = 0.404081
-PRE_name_r_jaw_cheek_ctrl_X = 0.089479
+PRE_name_r_jaw_cheek_ctrl_Y = 0.177909
+PRE_name_r_jaw_cheek_ctrl_X = -0.35571
 
 # 45 ~ 47
 #PRE_name_r_nose_cheek_ctrl_Z = 0.142525
-PRE_name_r_nose_cheek_ctrl_Y = 0.421987
-PRE_name_r_nose_cheek_ctrl_X = 0.050257
+PRE_name_r_nose_cheek_ctrl_Y = 0.186614
+PRE_name_r_nose_cheek_ctrl_X = -0.38361
 
 # 48 ~ 50
 #PRE_name_l_down_eye_border_ctrl_Z = 0.143587
-PRE_name_l_down_eye_border_ctrl_Y = 0.433989
-PRE_name_l_down_eye_border_ctrl_X = -0.019365
+PRE_name_l_down_eye_border_ctrl_Y = 0.185076
+PRE_name_l_down_eye_border_ctrl_X = -0.35978
 
 # 51 ~ 53
 #PRE_name_r_down_eye_border_ctrl_Z = 0.139288
-PRE_name_r_down_eye_border_ctrl_Y = 0.434798
-PRE_name_r_down_eye_border_ctrl_X = 0.058149
+PRE_name_r_down_eye_border_ctrl_Y = 0.114699
+PRE_name_r_down_eye_border_ctrl_X = -0.3695
 
 # 54 ~ 56
 #PRE_name_upLip_ctrl_Z = 0.152267
-PRE_name_upLip_ctrl_Y = 0.390458
-PRE_name_upLip_ctrl_X = 0.019759
+PRE_name_upLip_ctrl_Y = 0.267482
+PRE_name_upLip_ctrl_X = -0.36317
 
 # 57 ~ 59
 #PRE_name_l_upLip_ctrl_Z = 0.147181
-PRE_name_l_upLip_ctrl_Y = 0.387083
-PRE_name_l_upLip_ctrl_X = 0.001216
+PRE_name_l_upLip_ctrl_Y = 0.234867
+PRE_name_l_upLip_ctrl_X = -0.371
 
 # 60 ~ 62
 #PRE_name_r_upLip_ctrl_Z = 0.146955
-PRE_name_r_upLip_ctrl_Y = 0.385898
-PRE_name_r_upLip_ctrl_X = 0.038531
+PRE_name_r_upLip_ctrl_Y = 0.177909
+PRE_name_r_upLip_ctrl_X = -0.35571
 
 def deformface():
     global dataarray
@@ -515,7 +515,7 @@ def portData(arg):
         # 받은 arg 스트링을 recVal에 넣음.
     strArray = recVal.split(",")
         # recVal 스트링을 , 경계로 쪼갬.
-    for i in range(0,63):
+    for i in range(0,18):
         # 63가지의 데이터가 들어옴.
         dataarray.append(strArray[i])
         #print(strArray[i])
