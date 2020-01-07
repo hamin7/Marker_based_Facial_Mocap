@@ -1,7 +1,7 @@
 # Marker_based_Facial_Mocap
 
 ## 간략한 소개
-![Perseus](./images/Perseus.png)
+![Perseus](./images/Perseus.png.jpg)
 Optitrack으로 얻은 얼굴 움직임 데이터 (csv파일)을 이용하여 Maya 2018에서의 아바타에 적용. <br>
 실시간으로도 구동 가능. <br>
 
