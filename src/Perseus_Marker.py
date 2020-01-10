@@ -12,6 +12,19 @@ selectedBlend = ""
 dataarray = []
 gnumcurrenttime = 1
 
+"""
+menulabelarr = ['Brow Left UP','Brow Left Down','Brow Right UP','Brow Right Down','Brow Centering','Brow outer left down','Brow outer right down','Eye Close Left','Eye Close Right','Mouse Open',
+                'Mouse Left Smile','Mouse Right Smile','Mouse Left Spread','Mouse Right Spread','Mouse Left Frawn','Mouse Right Frawn','Mouse Left Centering','Mouse Right Centering','Cheek Left UP',
+                'Cheek Right UP']
+"""
+
+# Our mel global proc.
+melproc = """
+global proc portData(string $arg){
+    python(("portData(\\"" + $arg + "\\")"));
+}
+"""
+
 mm.eval(melproc)
 
 
