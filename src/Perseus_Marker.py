@@ -83,7 +83,7 @@ def expTrackerWindow():
 expTrackerWindow()
 
 # 0 ~ 2
-# PRE_name_Nose_ctrl_Z = 0
+PRE_name_Nose_ctrl_Z = 0
 PRE_name_Nose_ctrl_Y = 0
 PRE_name_Nose_ctrl_X = 0
 
